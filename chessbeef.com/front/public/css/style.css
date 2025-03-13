@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+input, button, textarea {
+    font: 400 18px Roboto, sans-serif;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.chess {
+    color: green;
+}
+
+.beef {
+    color: red;
+}
+
+.tagline {
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Custom chessboard styling to override chessboard.js defaults */
+#myBoard {
+    border: 10px solid red !important;
+    border-radius: 6px !important;
+    margin: 0 auto;
+}
+
+.white-1e1d7 {
+    background-color: #C99468 !important;
+}
+
+.black-3c85d {
+    background-color: #774C3B !important;
+}
+
+/* Game status and PGN display */
+#status, #pgn {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Game code input styling */
+#game-setup {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#codeInput {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#createGame, #joinGame {
+    margin: 5px;
+}
+
+#errorMessage {
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+}
+
+/* Registration form styling */
+#registration-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    font-size: 0.9em;
+    color: #666;
+}
