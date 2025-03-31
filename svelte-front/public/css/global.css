@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+@import '../../../public/css/chessboard-1.0.0.min.css';
+
+/* Reset and base styles */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+input, button, textarea {
+  font: 400 18px Roboto, sans-serif;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Custom chessboard styling to override chessboard.js defaults */
+#chessBoard, #staticBoard {
+  border: 10px solid red !important;
+  border-radius: 6px !important;
+  margin: 0 auto;
+}
+
+.white-1e1d7 {
+  background-color: #C99468 !important;
+}
+
+.black-3c85d {
+  background-color: #774C3B !important;
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        {{> head}}
+    </head>
+    <body>
+        <header>
+            <h1><a href="/"><span class="chess">Chess</span><span class="beef">Beef</span>.com</a></h1>
+            <p class="tagline">Settling the beef now...</p>
+        </header>
+
+        <div id="main">
+            <div class="game-info">
+                <h2>Playing as {{color}}</h2>
+            </div>
+            
+            <div id="myBoard" style="width: 600px"></div>
+            
+            <div class="game-status">
+                <div>
+                    <label>Status:</label>
+                    <div id="status"></div>
+                </div>
+                <div>
+                    <label>PGN:</label>
+                    <div id="pgn"></div>
+                </div>
+            </div>
+            
+            <button id="returnHome" onclick="window.location.href='/'">Return to Home</button>
+        </div>
+
+        <footer>
+            <p>ChessBeef &copy; 2024</p>
+        </footer>
+
+        <script>
+            let playerColor = '{{color}}';
+            console.log('Playing as ' + playerColor);
+            
+            // Make sure the game board knows where to find chess pieces
+            window.PIECE_THEME = '/public/img/chesspieces/wikipedia/{piece}.png';
+        </script>
+        <script src="/public/js/index.js"></script>
+    </body>
+</html>
